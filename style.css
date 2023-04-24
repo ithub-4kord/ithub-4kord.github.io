@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+}
+
+
+
+header{
+    display: grid;
+    padding: 20px 0 20px 30px;
+    gap: 10px;
+}
+
+.header-element{
+    display: flex;
+    gap: 10px;
+}
+
+.header-element__sign{
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.header-element__text{
+    font-size: 17px;
+    color: whitesmoke;
+}
+
+.header-element__sign1{
+    background-image: url(icons/eye-open.svg)
+}
+
+.header-element__sign2{
+    background-image: url(icons/eye-closed.svg)
+}
+
+.header-element__sign3{
+    background-image: url(icons/locked.svg)
+}
+
+.header-element__sign4{
+    background-image: url(icons/line-green.svg)
+}
+
+.header-element__sign5{
+    background-image: url(icons/line-grey.svg)
+}
+
+/* Основа */
+
+.main{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.main-container{
+    display: grid;
+    margin-bottom: 118px;
+}
+
+.main-element{
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+}
+
+
+
+.main-element__sign{
+    width: 20px;
+    height: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    margin-left: 56px;
+}
+
+.main-element__sign_database{
+    width: 100px;
+    height: 116px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+.main-element__client{
+    height: 47px;
+    padding-top: 26px;
+}
+
+.main-element__one_block{
+    height: 291px;
+    width: 136px;
+    display: grid;
+    align-content: space-between;
+    box-sizing: border-box;
+    padding: 15px 0;
+}
+
+.main-element__more_blocks{
+    height: 90px;
+    width: 479px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 36px 15px 22px 18px;
+    gap: 228px;
+    margin-bottom: 17px;
+}
+
+.main-element__text{
+    text-transform: none;
+    font-weight: bold;
+}
+
+.main-element__text_uppercase{
+    text-transform: uppercase;
+}
+
+.main-element__sign1{
+    background-image: url(icons/eye-open.svg);
+}
+
+.main-element__sign2{
+    background-image: url(icons/locked.svg);
+}
+
+.main-element__sign3{
+    background-image: url(icons/database.svg);
+}
+
+
+
+.main-container__bigBlock{
+    border: 3px dashed rgb(37, 37, 37);
+    display: flex;
+    gap: 10px;
+    border-radius: 7px;
+    padding: 100px 10px 0 10px;
+    margin-top: -105px;
+}
+
