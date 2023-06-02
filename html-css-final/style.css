@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.bg-1 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/banner.jpeg);
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+  background-size: cover;
+  background-color: black;
+  height: 100%;
+}
+@media (min-width: 992px) {
+  .bg-1 {
+    background-attachment: fixed;
+  }
+}
+.bg-2{
+  background-image: url(images/food5.jpeg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.bg-3{
+  background-image: url(images/food1.jpeg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.bg-4 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/food6.jpeg);
+}
+.bg-5 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/wine.jpeg);
+}
+.toggler__expand{
+  max-width: 250px;
+}
+.logo{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.down{
+  width: 70px;
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .down {
+    width: 75px;
+    margin-top: 150px;
+    margin-bottom: 50px
+  }
+}
+.banner__header{
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+@media (min-width: 576px) {
+  .banner__header{
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 768px) {
+  .banner__header{
+    font-size: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .banner__header {
+    font-size: 4rem;
+  }
+}
+
+.banner__text{
+  margin-top: 12px;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.4;
+}
+@media (min-width: 768px) {
+  .banner__text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+}
+@media (min-width: 992px) {
+  .banner__text {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+}
+.slogan, .events, .feedback, .our__menu, .galery, .figures, .contact-us {
+  margin-top: 100px;
+}
+.slogan__header, .events__description, .events__month, .menu__card__header, .contact-us__description {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 4px;
+  font-weight: 300;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .slogan__header, .events__description, .events__month, .menu__card__header, .contact-us__description {
+    font-size: 1.2rem
+  }
+}
+
+.slogan__text, .events__header, .feedback__text, .contact-us__header {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;
+}
+@media (min-width: 576px) {
+  .slogan__text, .events__header, .feedback__text, .contact-us__header {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .slogan__text, .events__header, .feedback__text, .contact-us__header {
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 992px) {
+  .slogan__text, .events__header, .feedback__text, .contact-us__header {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
+}
+.cards{
+  margin-top: 100px;
+}
+
+.cards__card_bg1, .cards__card_bg2, .cards__card_bg3{
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+}
+@media (min-width: 992px) {
+  .cards__card_bg1, .cards__card_bg2, .cards__card_bg3 {
+    min-height: 360px
+  }
+}
+.cards__card_bg1 {
+  background-image: url(images/food1.jpeg);
+}
+.cards__card_bg2 {
+  background-image: url(images/food2.jpeg);
+}
+.cards__card_bg3 {
+  background-image: url(images/food3.jpeg);
+}
+.cards__card {
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .cards__card {
+    padding-top: 80px;
+    padding-bottom: 16px
+  }
+}
+.cards__card__topic {
+  letter-spacing: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+.cards__card__header {
+  font-family: 'Playfair Display'!important;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.cards__card__text, .menu__card__text {
+  font-family: Helvetica, sans-serif;
+  margin-top: 20px;
+  line-height: 1.5;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.cards__card__link {
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+  padding-top: 160px;
+  padding-bottom: 100px;
+}
+.events__cards{
+  margin-top: 50px;
+}
+.events__button, .contact-us__button {
+  margin-top: 40px;
+  border-radius: 0;
+  border: solid 2px;
+  letter-spacing: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+.events__day{
+  font-size: 3rem;
+  font-weight: 700;
+}
+.events__text {
+  padding: 5px 20px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.feedback {
+  min-height: 640px;
+}
+
+.feedback__banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 10%;
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+@media (min-width: 576px) {
+  .feedback__banner {
+    padding-top: 250px;
+    padding-bottom: 200px
+  }
+}
+
+.feedback__text {
+  margin: auto;
+  width: 70%;
+  font-size: 2.4rem;
+  padding-top: 10px;
+  line-height: 1.12;
+}
+@media (min-width: 1200px) {
+  .feedback__text {
+    margin: auto;
+    font-size: 3.5rem;
+  }
+}
+.menu__list{
+  margin-top: 40px;
+}
+.menu__card__text {
+  padding: 0 25px 0;
+}
+.galery {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .galery {
+    height: 400px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr)
+  }
+}
+@media (min-width: 1200px) {
+  .galery {
+    height: 650px;
+  }
+}
+
+.galery__large-pic {
+  min-height: 350px;
+  background-image: url(images/wine.jpeg);
+  background-position: 50% 50%;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .galery__large-pic {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    min-height: 300px;
+  }
+}
+.galery__middle-pic{
+  min-height: 175px;
+  background-image: url(images/food4.jpeg);
+  background-position: 50% 65%;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .galery__middle-pic {
+    grid-column: 3/5;
+    min-height: 100px;
+  }
+}
+.galery__small-pic {
+  min-height: 350px;
+}
+@media (min-width: 768px) {
+  .galery__small-pic {
+  min-height: 100px;
+  }
+}
+.figures__cards__card{
+  margin-top: 40px;
+}
+.figures__cards__card__icon {
+  width: 65px;
+}
+.figures__cards__card__number{
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+@media (min-width: 992px) {
+  .figures__cards__card__number{
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }    
+}
+.figures__cards__card__text{
+  padding: 0 60px;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+}
+.figures__cards__card__declaration {
+  margin: auto;
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: 300;
+  line-height: 1.1;
+  height: 220px;
+  width: 220px;
+  padding: 30px;
+  display: flex;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+@media (min-width: 1200px) {
+  .figures__cards__card__declaration {
+    height: 250px;
+    width: 250px;
+  }
+}
+.contact-us__form__field{
+  border: solid 1px #d7d2d2;
+  border-radius: 0;
+  font-size: 16px;
+  color: #d7d2d2;
+}
+@media (min-width: 768px) {
+  .contact-us__form__field{
+    font-size: 20px;
+  }
+}
+footer {
+  min-height: 200px;
+  background-color: rgb(51, 51, 51);
+}
+a {
+  text-decoration: none;
+  font-size: 16px;
+}
+.contact-us__button {
+  margin-top: 20px;
+}
