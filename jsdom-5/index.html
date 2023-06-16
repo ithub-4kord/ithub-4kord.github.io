@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CP-5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="logo" id="logo"></div>
+        <div class="card_number" id="card_number"></div>
+        <div class="exp_date" id="exp_date"></div>
+        <div class="cardhld"></div>
+        <div class="system" id="system"></div>
+    </div>
+    <div class="block">
+        <form action="" id="card_data">
+            <div class="item">
+                <input type="text" name="txt" maxlength="16" placeholder="XXXX XXXX XXXX XXXX" class="number">
+            </div>
+            <div class="item">
+                <input type="text" name="cardholder" placeholder="NAME" class="name">
+            </div>
+            <div class="item">
+                <input type="month" class="date" min="2000-01" value="2000-01">
+            </div>
+            <div class="item">
+                <select name="card_type" id="card_type" class="card_type">
+                    <option>Choose system</option>
+                    <option>VISA</option>
+                    <option>MASTER CARD</option>
+                </select>
+            </div>
+            <div class="item">
+                <select name="bank" id="" class="bank">
+                    <option>Выберете банк</option>
+                    <option>Сбербанк</option>
+                    <option>Тинькофф</option>
+                </select>
+            </div>
+            <div><input type="submit" class="block"></div>
+        </form>
+        
+    </div>
+    <table class="table">
+        <tr>
+            <td>Номер карты</td>
+            <td>Держатель</td>
+            <td>Срок действия</td>
+            <td>Платежная система</td>
+            <td>Банк</td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
