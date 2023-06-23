@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .slider {
+      width: 200px;
+      height: 10px;
+      background-color: #ccc;
+      position: relative;
+      margin-top: 20px;
+    }
+
+    .slider .handle {
+      width: 20px;
+      height: 20px;
+      background-color: #555;
+      border-radius: 50%;
+      position: absolute;
+      top: -5px;
+      cursor: pointer;
+    }
+
+    .slider .value {
+      position: absolute;
+      top: -25px;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <div class="handle"></div>
+  </div>
+  <div class="value">0</div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var slider = document.querySelector('.slider');
+      var handle = slider.querySelector('.handle');
+      var valueDisplay = document.querySelector('.value');
+      var sliderWidth = slider.offsetWidth - handle.offsetWidth;
+      var minValue = 0;
+      var maxValue = 100;
+
+      function setValue(value) {
+        var percent = ((value - minValue) / (maxValue - minValue)) * 100;
+        handle.style.left = percent + '%';
+        valueDisplay.textContent = value;
+      }
+
+      handle.addEventListener('mousedown', function(event) {
+        event.preventDefault();
+
+        function handleMouseMove(event) {
+          var percent = ((event.clientX - slider.getBoundingClientRect().left) / sliderWidth) * 100;
+          var value = Math.round((percent / 100) * (maxValue - minValue) + minValue);
+          if (value < minValue) {
+            value = minValue;
+          } else if (value > maxValue) {
+            value = maxValue;
+          }
+          setValue(value);
+        }
+
+        function handleMouseUp() {
+          document.removeEventListener('mousemove', handleMouseMove);
+          document.removeEventListener('mouseup', handleMouseUp);
+        }
+
+        document.addEventListener('mousemove', handleMouseMove);
+        document.addEventListener('mouseup', handleMouseUp);
+      });
+
+      setValue(50);
+      minValue = 0;
+      maxValue = 100;
+    });
+  </script>
+</body>
+</html>
